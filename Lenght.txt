@@ -1,0 +1,39 @@
+using System;
+namespace program {
+    class lenght{
+    int X1,Y1,X2,Y2;
+      public void zerotest(int X1, int X2, int Y1, int Y2)
+        {
+            if (X1 < 0 || X2 < 0 || Y1 < 0 || Y2 < 0)
+            {
+                Console.WriteLine("ERROR");
+            }
+        }
+     public void calc()
+        {
+            double x=Math.Pow((x2-x1),2);
+            double y=Math.Pow((y2-y1),2);
+            double res=Math.Sqrt(x+y);
+            Console.WriteLine("lenght="+res);
+        }
+}}
+class test{
+    public static void main(){
+            
+            length newlenght = new length();
+            Console.WriteLine("enter the x1:");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("enter the y1:");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the x2:");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the y2:");
+            int num4 = Convert.ToInt32(Console.ReadLine());
+
+
+            newlenght.zerotest(num1,num2,num3,num4);
+            newlenght.calc();
+    }   
+}
+
