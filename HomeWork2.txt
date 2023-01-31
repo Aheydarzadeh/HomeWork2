@@ -1,0 +1,30 @@
+using System;
+namespace program{
+    class Timecalc {
+        public int  hour;
+        public int  minutes;
+        public int seconds;
+        public static void time(int hour,int minutes,int seconds){
+            if(hour < 12 ){
+                Console.WriteLine("Its " + hour + ":" + minutes + ":" + seconds + "A.M")
+            }
+            else if (hour > 12 && hour <24){
+                Console.WriteLine("its" + (hour-12) + ":" + minutes + ":" + seconds + " P.M")
+            }
+        }
+    }
+    class end {
+        public static void main(){
+            Timecalc obj1 = new Timecalc();
+            Console.WriteLine("insert Hour");
+            int num1 = Convert.ToInt32(Console.ReadLine())
+            Console.WriteLine("insert Minutes");
+            int num2 = Convert.ToInt32(Console.ReadLine())
+            Console.WriteLine("insert seconds")
+            int num2 = Convert.ToInt32(Console.ReadLine())
+            obj1.time(num1,num2,num3);
+
+            return 0;
+        }
+    }
+}
